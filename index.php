@@ -342,7 +342,7 @@ ul li a:hover{text-decoration:none;}
 	     <div class="row" style="padding:10px; ">
 		 <div class="col-sm-6">
 		 <span><li><?php echo $res['cuisines']; ?></li></span>
-		 <span><li><?php echo "Rs ".$res['cost']; ?>&nbsp;for 1</li></span>
+		 <span><li><?php echo $res['cost']." Dhs"; ?>&nbsp;for 1</li></span>
 		 <span><li>Up To 60 Minutes</li></span>
 		 </div>
 		 <div class="col-sm-6" style="padding:20px;">

@@ -220,7 +220,7 @@ if(isset($del))
                       <tr>
                          <td><image src="../image/restaurant/<?php echo $em."/foodimages/".$res['fldimage'];?>" height="80px" width="100px"></td>
                          <td><?php echo $res['foodname'];?></td>
-                         <td><?php echo "RS ".$res['cost'];?></td>
+                         <td><?php echo $res['cost']." Dhs";?></td>
                          <td><?php echo $res['cuisines'];?></td>
                          <td><?php echo $nm; ?></td>
 		                <form method="post" enctype="multipart/form-data">
@@ -238,7 +238,7 @@ if(isset($del))
 					  <h5 style="color:red;">Grand total</h5>
 					  </td>
 					  <td>
-					  <h5><i class="fas fa-rupee-sign"></i>&nbsp;<?php echo end($gtotal); ?></h5>
+					  <h5><?php echo end($gtotal); ?>&nbsp;<i style="font-weight: bold;">Dhs</i></h5>
 					  </td>
 					  <td>
 					  

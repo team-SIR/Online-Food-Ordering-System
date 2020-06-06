@@ -249,7 +249,7 @@ ul li a:hover{text-decoration:none;}
 		                     <span style="font-family: 'Miriam Libre', sans-serif; font-size:18px;color:#CB202D;">
 		 <?php echo $res['fld_name']; ?></span><span style="color:black; margin-left:10px;"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
         </div>
-		 <div class="col-sm-2"><i class="fas fa-rupee-sign"></i><span style="color:green; font-size:20px;"> <?php echo $res['cost']; ?></span></div>
+		 <div class="col-sm-2"><span style="color:green; font-size:20px;"> <?php echo $res['cost']; ?></span><i style="font-weight: bold;"> Dhs</i></div>
 		 <form method="post">
 		 <div class="col-sm-2" style="text-align:left;padding:10px; font-size:15px;"><button type="submit" name="addtocart" value="<?php echo $fid; ?>")" ><span style="color:green;" <i class="fa fa-shopping-cart" aria-hidden="true"></i></span></button></div>
 		 </form>
@@ -266,7 +266,7 @@ ul li a:hover{text-decoration:none;}
 	     <div class="row" style="padding:10px; ">
 		 <div class="col-sm-5">
 		 <span><li><?php echo $res['cuisines']; ?></li></span>
-		 <span><li><?php echo "Rs ".$res['cost']; ?>&nbsp;for 1</li></span>
+		 <span><li><?php echo $res['cost']." Dhs"; ?>&nbsp;for 1</li></span>
 		 <span><li>Up To 60 Minutes</li></span>
 		 </div>
 		 <div class="col-sm-6" style="">

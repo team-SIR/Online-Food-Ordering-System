@@ -319,17 +319,32 @@ ul li a:hover{text-decoration:none;}
 	
 	  <div class="container-fluid">
 	  <div class="container-fluid">
-	     <div class="row" style="padding:10px; ">
-		      <div class="col-sm-2"><img src="<?php echo $hotel_logo; ?>" class="rounded-circle" height="50px" width="50px" alt="Cinque Terre"></div>
-		      <div class="col-sm-5">
-		                     <a href="search.php?vendor_id=<?php echo $res['fldvendor_id']; ?>"><span style="font-family: 'Miriam Libre', sans-serif; font-size:28px;color:#CB202D;">
-		 <?php echo $res['fld_name']; ?></span></a>
-        </div>
-		 <div class="col-sm-3"><span style="color:green; font-size:25px;"><?php echo $res['cost']; ?></span>&nbsp;<i  style="font-size:20px;font-weight: bold;" >Dhs</i></div>
-		 <form method="post">
-		 <div class="col-sm-2" style="text-align:left;padding:10px; font-size:25px;"><button type="submit" name="addtocart" value="<?php echo $res['food_id'];?>")" ><span style="color:green;" <i class="fa fa-shopping-cart" aria-hidden="true"></i></span></button></div>
-		 <form>
-		 </div>
+	    <div class="row" style="padding:10px; ">
+		    <div class="col-sm-2">
+		    	<img src="<?php echo $hotel_logo; ?>" class="rounded-circle" height="50px" width="50px" alt="Cinque Terre">
+		    </div>
+
+		    <div class="col-sm-5">
+		        <a href="search.php?vendor_id=<?php echo $res['fldvendor_id']; ?>">
+		         	<span style="font-family: 'Miriam Libre', sans-serif; font-size:28px;color:#CB202D;">
+		 				<?php echo $res['fld_name']; ?>
+		 	
+		 			</span>
+				</a>
+        	</div>
+
+		 	<div class="col-sm-3">
+		 		<span style="color:green; font-size:25px;"><?php echo $res['cost']; ?></span>&nbsp;<i  style="font-size:20px;font-weight: bold;" >Dhs</i>
+		 	</div>
+
+		 	<div class="col-sm-2">
+				<form method="post">
+					<div class="col-sm-2" style="text-align:left;padding:10px; font-size:25px;">
+						<button type="submit" name="addtocart" value="<?php echo $res['food_id'];?>)" ><span style="color:green;"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></span></button>
+					</div>
+				</form>
+			</div>
+		</div>
 		 
 	  </div>
 	  <div class="container-fluid">
@@ -341,12 +356,12 @@ ul li a:hover{text-decoration:none;}
 	  <div class="container-fluid">
 	     <div class="row" style="padding:10px; ">
 		 <div class="col-sm-6">
-		 <span><li><?php echo $res['cuisines']; ?></li></span>
-		 <span><li><?php echo $res['cost']." Dhs"; ?>&nbsp;for 1</li></span>
-		 <span><li>Up To 60 Minutes</li></span>
+			 <span><li><?php echo $res['cuisines']; ?></li></span>
+			 <span><li><?php echo $res['cost']." Dhs"; ?>&nbsp;for 1</li></span>
+			 <span><li>Up To 60 Minutes</li></span>
 		 </div>
 		 <div class="col-sm-6" style="padding:20px;">
-		 <h3><?php echo"(" .$res['foodname'].")"?></h3>
+		 	<h3><?php echo"(" .$res['foodname'].")"?></h3>
 		 </div>
 		 </div>
 		 
